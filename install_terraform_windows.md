@@ -97,4 +97,4 @@ Terraform is now successfully installed and ready to use on your Windows machine
 
 ---
 
-*Created by [] — [GitHub Profile](https://github.com/yourusername)*
+*Created by [Lahiruerandika] — (https://github.com/Lahiruerandika/terraform-installation-windows)*
