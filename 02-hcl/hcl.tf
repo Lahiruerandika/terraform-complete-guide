@@ -1,11 +1,15 @@
 terraform {
   required_providers {
     aws = {
-      source  = hashicorp / aws
-      version = "5.37.0"
+      source  = "hashicorp/aws"
+      version = ">5.37.0"
     }
 
   }
+}
+
+provider "aws" {
+  region = "us-east-1" # You can change this to your preferred region
 }
 
 #Actively managed by us
@@ -32,6 +36,7 @@ locals {
   local_example = "This is a local variable"
 }
 
-module "my_madule" {
-  source = "./module-example"
-}
+#If there any related modules/dependencies available, use the relavent file
+# module "my_madule" {
+#   source = "./module-example"
+# }
