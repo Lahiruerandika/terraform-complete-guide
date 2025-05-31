@@ -1,0 +1,14 @@
+#After adding a backend to terraform block, use init
+terraform init -migrate-state
+
+#After adding a backend to dev.s3.tfbackend, use init
+terraform init -backend-config="dev.s3.tfbackend" -migrate-state
+
+#After adding a backend to prod.s3.tfbackend, use init
+terraform init -backend-config="prod.s3.tfbackend" -migrate-state
+
+#plan for dev
+terraform plan -out dev_plan
+
+#apply for dev
+terraform apply -out dev_plan

@@ -10,11 +10,8 @@ terraform {
       version = "~>3"
     }
   }
-  backend "s3" {
-    bucket = "your_manually_created_bucket_url"
-    key    = "04-backend/terraform.tfstate"
-    region = "us-east-1"
-  }
+    backend "s3" {
+    }
 }
 
 provider "aws" {
