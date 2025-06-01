@@ -1,12 +1,22 @@
 resource "aws_instance" "web" {
-  ami                         = "put_relavent_ami_id_for_region"
+  #ami                         = "put_relavent_ami_id_for_region"
+  ami                         = "ami-010e099e651d8635e"
   associate_public_ip_address = true
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.public.id
+  vpc_security_group_ids      = [aws_security_group.public_http_traffic.id]
   root_block_device {
     delete_on_termination = true
     volume_size           = 10
     volume_type           = "gp3"
+  }
+  tags = merge(local.common_tags, {
+    Name = "06-resource-ec2"
+  })
+
+  lifecycle {
+    # create_before_destroy = true
+    # ignore_changes = [ tags ]
   }
 
 }
@@ -16,6 +26,10 @@ resource "aws_security_group" "public_http_traffic" {
   name        = "public-http-traffic"
   vpc_id      = aws_vpc.main.id
 
+  tags = merge(local.common_tags, {
+    Name = "06-resource-sg"
+  })
+
 }
 
 resource "aws_vpc_security_group_ingress_rule" "http" {
@@ -24,6 +38,8 @@ resource "aws_vpc_security_group_ingress_rule" "http" {
   from_port         = 80
   to_port           = 80
   ip_protocol       = "tcp"
+  
+  
 
 }
 
