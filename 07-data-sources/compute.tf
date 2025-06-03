@@ -16,9 +16,32 @@ data "aws_ami" "ubuntu" {
 
 }
 
+data "aws_caller_identity" "current" {}
+
+data "aws_region" "current" {}
+
+# data "aws_vpc" "prod_vpc" {
+#   tags = {
+#     Env = "Prod_vpc"
+#   }
+
+# }
+
+output "aws_caller_identity" {
+  value = data.aws_caller_identity.current
+}
+
+output "aws_region" {
+  value = data.aws_region.current
+}
+
 output "ubuntu_ami_data" {
   value = data.aws_ami.ubuntu
 }
+
+# output "Prod_vpc" {
+#   value = data.aws_vpc.prod_vpc.id
+# }
 
 resource "aws_instance" "web" {
   #ami                         = "put_relavent_ami_id_for_region"
