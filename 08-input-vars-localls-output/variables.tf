@@ -1,6 +1,6 @@
 variable "ec2_instance_type" {
   type        = string
-  description = "value"
+  description = "The type of the managed EC2 instances."
 
   validation {
     condition     = contains(["t2.micro", "t3.micro"], var.ec2_instance_type)
