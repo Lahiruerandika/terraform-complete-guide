@@ -17,3 +17,6 @@ output "first_names" {
   value = local.first_names
 }
 
+output "full_names" {
+  value = local.full_names
+}
