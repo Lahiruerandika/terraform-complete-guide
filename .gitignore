@@ -19,7 +19,7 @@ terraform.rc
 .terraform/
 
 # Sensitive variable files
-*.tfvars
+#*.tfvars
 *.tfvars.json
 
 # Ignore plan output
