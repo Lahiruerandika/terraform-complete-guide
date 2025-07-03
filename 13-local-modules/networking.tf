@@ -9,5 +9,12 @@ module "vpc" {
       cidr_block = "10.0.0.0/24"
       az         = "eu-west-1a"
     }
+
+        subnet_2 = {
+      cidr_block = "10.0.1.0/24"
+      az         = "eu-west-1b"
+    }
   }
+
+
 }
