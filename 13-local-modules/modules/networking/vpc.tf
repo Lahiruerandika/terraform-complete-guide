@@ -23,7 +23,7 @@ resource "aws_subnet" "this" {
 
   lifecycle {
     precondition {
-      condition = contains(data.aws_availability_zones.available.names, each.value.az )
+      condition     = contains(data.aws_availability_zones.available.names, each.value.az)
       error_message = <<-EOT
       The AZ "${each.value.az}" provided for the subnet "${each.key}" is invalid.
       
