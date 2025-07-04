@@ -1,3 +1,9 @@
+locals {
+  public_subnets = {
+    for key, config in var.var.subnet_config : key => config if config.public
+  }
+}
+
 data "aws_availability_zones" "available" {
   state = "available"
 }
