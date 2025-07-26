@@ -171,3 +171,45 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75674-exam-terraform-associate-topic-1-question-5-discussion/)
 
 </details>
+
+## Question #: 06  
+Topic #: 1
+
+**You run a local-exec provisioner in a null resource called `null_resource.run_script` and realize that you need to rerun the script.  
+Which of the following commands would you use first?**
+
+- A. terraform taint null_resource.run_script  
+- B. terraform apply -target=null_resource.run_script  
+- C. terraform validate null_resource.run_script  
+- D. terraform plan -target=null_resource.run_script  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. terraform taint null_resource.run_script**
+
+---
+
+### 📘 Explanation:
+
+- **`local-exec` provisioners** only run **when the resource is created**.
+- To **rerun** a `local-exec` script tied to a `null_resource`, you must **force Terraform to recreate the resource**.
+- `terraform taint null_resource.run_script` marks the resource as **tainted**, which means Terraform will destroy and recreate it during the next `terraform apply`.
+- The `apply` command would then trigger the provisioner again.
+
+**Why not the others?**
+- `terraform apply -target=...` won’t force re-execution unless the resource is changed or tainted.
+- `terraform validate` only checks configuration syntax.
+- `terraform plan -target=...` shows the plan but doesn’t actually trigger any actions.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Taint Command](https://developer.hashicorp.com/terraform/cli/commands/taint)
+- [Terraform Docs: Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75954-exam-terraform-associate-topic-1-question-6-discussion/)
+
+</details>
