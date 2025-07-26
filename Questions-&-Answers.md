@@ -479,3 +479,40 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75676-exam-terraform-associate-topic-1-question-13-discussion/)
 
 </details>
+
+## Question #: 14 
+Topic #: 1
+
+**If you manually destroy infrastructure, what is the best practice reflecting this change in Terraform?**
+
+- A. Run terraform refresh  
+- B. It will happen automatically  
+- C. Manually update the state file  
+- D. Run terraform import ✅  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. Run terraform import**
+
+---
+
+### 📘 Explanation:
+
+- When infrastructure is **manually destroyed**, the resource still exists in Terraform's **state file**.
+- The best way to reconcile Terraform with real-world infrastructure is to **re-import the current state** of existing infrastructure using `terraform import`.
+- `terraform refresh` only **updates attributes** of resources still in state — it won't detect that something has been deleted.
+- **Manually editing the state file is discouraged** and can be error-prone.
+- It does **not happen automatically** — Terraform assumes it manages the full lifecycle unless told otherwise.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Import](https://developer.hashicorp.com/terraform/cli/import)
+- [Terraform State Management](https://developer.hashicorp.com/terraform/language/state)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74312-exam-terraform-associate-topic-1-question-14-discussion/)
+
+</details>
