@@ -552,3 +552,43 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74493-exam-terraform-associate-topic-1-question-15-discussion/)
 
 </details>
+
+## Question #: 16 
+Topic #: 1
+
+**What information does the public Terraform Module Registry automatically expose about published modules?**
+
+- A. Required input variables  
+- B. Optional input variables and default values  
+- C. Outputs  
+- D. All of the above   
+- E. None of the above  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. All of the above**
+
+---
+
+### 📘 Explanation:
+
+The [public Terraform Module Registry](https://registry.terraform.io/) automatically extracts and displays the following information from the module source code:
+
+- **Required input variables** — Variables without default values.
+- **Optional input variables** — Along with their **default values**.
+- **Outputs** — The `output` blocks defined in the module.
+
+This allows users to understand how to use a module **without needing to read all of the source code**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Module Registry](https://developer.hashicorp.com/terraform/registry/modules/publish)
+- [Terraform Registry Example](https://registry.terraform.io/modules)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74314-exam-terraform-associate-topic-1-question-16-discussion/)
+
+</details>
