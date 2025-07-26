@@ -290,3 +290,41 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74084-exam-terraform-associate-topic-1-question-8-discussion/)
 
 </details>
+
+## Question #: 09  
+Topic #: 1
+
+**What command does Terraform require the first time you run it within a configuration directory?**
+
+- A. terraform import  
+- B. terraform init ✅  
+- C. terraform plan  
+- D. terraform workspace  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. terraform init**
+
+---
+
+### 📘 Explanation:
+
+- `terraform init` initializes the working directory containing Terraform configuration files.
+- It downloads required provider plugins and sets up the backend.
+- This command must be run before any other Terraform commands such as `plan` or `apply`.
+- `terraform import` is used to import existing infrastructure into state.
+- `terraform plan` previews changes but requires `init` first.
+- `terraform workspace` manages different state workspaces.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: terraform init](https://developer.hashicorp.com/terraform/cli/commands/init)
+- [Terraform Docs: Getting Started](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75675-exam-terraform-associate-topic-1-question-9-discussion/)
+
+</details>
