@@ -592,3 +592,36 @@ This allows users to understand how to use a module **without needing to read al
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74314-exam-terraform-associate-topic-1-question-16-discussion/)
 
 </details>
+
+## Question #: 17  
+Topic #: 1
+
+**If a module uses a local value, you can expose that value with a Terraform output.**
+
+- A. True ✅  
+- B. False  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. True**
+
+---
+
+### 📘 Explanation:
+
+- Terraform allows you to **reference local values** within `output` blocks.
+- While local values are scoped to the module, you can **expose them externally by assigning them to an output**.
+- This is a common practice when you want to use simplified or computed values outside of the module.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Local Values](https://developer.hashicorp.com/terraform/language/values/locals)
+- [Terraform Docs: Outputs](https://developer.hashicorp.com/terraform/language/values/outputs)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/81400-exam-terraform-associate-topic-1-question-17-discussion/)
+
+</details>
