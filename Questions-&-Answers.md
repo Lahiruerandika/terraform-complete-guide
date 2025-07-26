@@ -219,7 +219,7 @@ Topic #: 1
 
 **Which provisioner invokes a process on the resource created by Terraform?**
 
-- A. remote-exec ✅  
+- A. remote-exec  
 - B. null-exec  
 - C. local-exec  
 - D. file  
@@ -249,5 +249,44 @@ Topic #: 1
 - [Terraform Docs: Provisioners - local-exec](https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec)
 - [Terraform Docs: Provisioners - file](https://developer.hashicorp.com/terraform/language/resources/provisioners/file)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74490-exam-terraform-associate-topic-1-question-7-discussion/)
+
+</details>
+
+## Question #: 08  
+Topic #: 1
+
+**Which of the following is not true of Terraform providers?**
+
+- A. Providers can be written by individuals  
+- B. Providers can be maintained by a community of users  
+- C. Some providers are maintained by HashiCorp  
+- D. Major cloud vendors and non-cloud vendors can write, maintain, or collaborate on Terraform providers  
+- E. None of the above  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**E. None of the above**
+
+---
+
+### 📘 Explanation:
+
+- All the listed statements (A to D) are true regarding Terraform providers:
+  - Individuals can write custom providers.
+  - Providers can be community-maintained.
+  - HashiCorp maintains some official providers.
+  - Both cloud vendors and non-cloud vendors contribute to providers.
+- Therefore, none of the statements are false.
+
+---
+
+### 🔗 References:
+- [Terraform Providers Overview](https://developer.hashicorp.com/terraform/language/providers)
+- [Terraform Provider Development](https://developer.hashicorp.com/terraform/cli/plugin)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74084-exam-terraform-associate-topic-1-question-8-discussion/)
 
 </details>
