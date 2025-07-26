@@ -59,3 +59,40 @@ If someone makes **manual changes** to infrastructure outside of Terraform (like
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75671-exam-terraform-associate-topic-1-question-2-discussion/)
 
 </details>
+
+## Question #: 3  
+Topic #: 1
+
+**How is the Terraform remote backend different than other state backends such as S3, Consul, etc.?**
+
+- A. It can execute Terraform runs on dedicated infrastructure on premises or in Terraform Cloud  
+- B. It doesn’t show the output of a terraform apply locally  
+- C. It is only available to paying customers  
+- D. All of the above
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. All of the above**
+
+---
+
+### 📘 Explanation:
+
+- The Terraform remote backend (such as Terraform Cloud or Terraform Enterprise) can **execute Terraform runs remotely** on dedicated infrastructure, unlike simple storage backends like S3 or Consul which only store state.
+- It does **not show the output of `terraform apply` locally** because runs happen remotely.
+- Some advanced remote backend features require a **paid Terraform Cloud or Enterprise subscription**.
+- Therefore, all options are true.
+
+---
+
+### 🔗 References:
+- [Terraform Remote Backend Overview](https://developer.hashicorp.com/terraform/cloud-docs/backend/remote)
+- [Terraform Cloud Pricing](https://www.hashicorp.com/pricing#terraform-cloud)
+- [Terraform Backends](https://developer.hashicorp.com/terraform/language/settings/backends)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75672-exam-terraform-associate-topic-1-question-3-discussion/)
+
+</details>
