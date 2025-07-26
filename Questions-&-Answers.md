@@ -18,7 +18,7 @@ It represents Terraform's **last known state**, based on what Terraform has crea
 
 If someone makes **manual changes** to infrastructure outside of Terraform (like in a cloud console), the state file won’t be updated unless you run:
 
-# terraform refresh
+### terraform refresh
 
 ### 🔗 References:
 - [Terraform Docs: State](https://developer.hashicorp.com/terraform/language/state)
