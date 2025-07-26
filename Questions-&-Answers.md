@@ -436,3 +436,46 @@ Topic #: 1
 
 </details>
 
+## Question #: 13  
+Topic #: 1
+
+**What is the provider for this fictitious resource?**
+
+"resource "aws_vpc" "main" {
+  name = "test"
+}"
+
+- A. vpc  
+- B. main  
+- C. aws   
+- D. test  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. aws**
+
+---
+
+### 📘 Explanation:
+
+- In Terraform, the resource block follows the format:  
+  `resource "<PROVIDER>_<RESOURCE_TYPE>" "<LOCAL_NAME>" { ... }`
+- From this structure:
+  - **Provider**: `aws`
+  - **Resource type**: `vpc`
+  - **Local name**: `main`
+  - `"test"` is just a value for the `name` property, not a component of the provider
+- Therefore, the provider is clearly `aws`.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Resource Configuration](https://developer.hashicorp.com/terraform/language/resources/syntax)
+- [Terraform Providers](https://developer.hashicorp.com/terraform/language/providers)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75676-exam-terraform-associate-topic-1-question-13-discussion/)
+
+</details>
