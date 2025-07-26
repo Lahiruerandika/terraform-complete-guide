@@ -402,3 +402,36 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74491-exam-terraform-associate-topic-1-question-11-discussion/)
 
 </details>
+
+## Question #: 12  
+Topic #: 1
+
+**Terraform variables and outputs that set the “description” argument will store that description in the state file.**
+
+- A. True  
+- B. False ✅  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- Terraform **does not store variable or output descriptions** in the state file.
+- The state file only contains **resolved values** of variables and outputs, along with resource metadata.
+- Descriptions are used only in the configuration and documentation but **are not persisted in the state**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Variables](https://developer.hashicorp.com/terraform/language/values/variables#description)
+- [Terraform Docs: State](https://developer.hashicorp.com/terraform/language/state)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/78939-exam-terraform-associate-topic-1-question-12-discussion/)
+
+</details>
