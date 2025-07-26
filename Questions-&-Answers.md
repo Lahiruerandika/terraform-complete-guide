@@ -5,6 +5,9 @@
 - A. True  
 - B. False ✅
 
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
 ---
 
 ## ✅ Correct Answer: B. False
@@ -22,3 +25,5 @@ terraform refresh
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75524-exam-terraform-associate-topic-1-question-1-discussion/)
 - [Terraform Docs: State](https://developer.hashicorp.com/terraform/language/state)
 - [Terraform Docs: Refresh Command](https://developer.hashicorp.com/terraform/cli/commands/refresh)
+
+</details>
