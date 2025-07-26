@@ -297,7 +297,7 @@ Topic #: 1
 **What command does Terraform require the first time you run it within a configuration directory?**
 
 - A. terraform import  
-- B. terraform init ✅  
+- B. terraform init 
 - C. terraform plan  
 - D. terraform workspace  
 
@@ -326,5 +326,44 @@ Topic #: 1
 - [Terraform Docs: terraform init](https://developer.hashicorp.com/terraform/cli/commands/init)
 - [Terraform Docs: Getting Started](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75675-exam-terraform-associate-topic-1-question-9-discussion/)
+
+</details>
+
+## Question #: 10  
+Topic #: 1
+
+**You have deployed a new webapp with a public IP address on a cloud provider. However, you did not create any outputs for your code.  
+What is the best method to quickly find the IP address of the resource you deployed?**
+
+- A. Run terraform output ip_address to view the result  
+- B. In a new folder, use the terraform_remote_state data source to load in the state file, then write an output for each resource that you find the state file  
+- C. Run terraform state list to find the name of the resource, then terraform state show to find the attributes including public IP address  
+- D. Run terraform destroy then terraform apply and look for the IP address in stdout  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Run terraform state list to find the name of the resource, then terraform state show to find the attributes including public IP address**
+
+---
+
+### 📘 Explanation:
+
+- `terraform state list` shows all resources tracked in the state file.
+- Using `terraform state show <resource_name>` displays detailed attributes of the resource, including the public IP address.
+- This is the quickest way to find resource attributes if outputs were not defined.
+- Option A won't work if no output is defined.
+- Option B is more complex and unnecessary for quick info.
+- Option D is destructive and inefficient.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: terraform state](https://developer.hashicorp.com/terraform/cli/commands/state)
+- [Terraform Docs: Outputs](https://developer.hashicorp.com/terraform/language/values/outputs)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74085-exam-terraform-associate-topic-1-question-10-discussion/)
 
 </details>
