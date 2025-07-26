@@ -367,3 +367,38 @@ What is the best method to quickly find the IP address of the resource you deplo
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74085-exam-terraform-associate-topic-1-question-10-discussion/)
 
 </details>
+
+## Question #: 11  
+Topic #: 1
+
+**Which of the following is not a key principle of infrastructure as code?**
+
+- A. Versioned infrastructure  
+- B. Golden images
+- C. Idempotence  
+- D. Self-describing infrastructure  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Golden images**
+
+---
+
+### 📘 Explanation:
+
+- **Versioned infrastructure**, **idempotence**, and **self-describing infrastructure** are core principles of infrastructure as code (IaC).
+- **Golden images** (pre-baked machine images) are a deployment strategy but **not a fundamental principle of IaC**.
+- IaC emphasizes managing infrastructure via code that is version-controlled, repeatable, and declarative.
+
+---
+
+### 🔗 References:
+- [Infrastructure as Code Principles](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code)
+- [Terraform Docs: IaC Concepts](https://developer.hashicorp.com/terraform/intro/infrastructure-as-code)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74491-exam-terraform-associate-topic-1-question-11-discussion/)
+
+</details>
