@@ -60,7 +60,7 @@ If someone makes **manual changes** to infrastructure outside of Terraform (like
 
 </details>
 
-## Question #: 3  
+## Question #: 03  
 Topic #: 1
 
 **How is the Terraform remote backend different than other state backends such as S3, Consul, etc.?**
@@ -96,3 +96,45 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75672-exam-terraform-associate-topic-1-question-3-discussion/)
 
 </details>
+
+## Question #: 04  
+
+**What is the workflow for deploying new infrastructure with Terraform?**
+
+- A. terraform plan to import the current infrastructure to the state file, make code changes, and terraform apply to update the infrastructure.  
+- B. Write a Terraform configuration, run terraform show to view proposed changes, and terraform apply to create new infrastructure.  
+- C. terraform import to import the current infrastructure to the state file, make code changes, and terraform apply to update the infrastructure.  
+- D. Write a Terraform configuration, run terraform init, run terraform plan to view planned infrastructure changes, and terraform apply to create new infrastructure.
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. Write a Terraform configuration, run terraform init, run terraform plan to view planned infrastructure changes, and terraform apply to create new infrastructure.**
+
+---
+
+### 📘 Explanation:
+
+The standard workflow for deploying new infrastructure with Terraform includes:
+
+1. **Write a configuration** – Define your infrastructure resources in `.tf` files using HCL.  
+2. **Initialize the working directory** using `terraform init` to download providers and configure backends.  
+3. **Preview the planned changes** using `terraform plan`.  
+4. **Apply the configuration** using `terraform apply` to provision the defined infrastructure.
+
+- `terraform import` is used to bring existing infrastructure into Terraform's state file, not to deploy new infrastructure.  
+- `terraform show` displays current state but not proposed changes.  
+- `terraform plan` doesn't import anything — it only shows what *will* happen.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Core Workflow](https://developer.hashicorp.com/terraform/intro/core-workflow)  
+- [Terraform CLI Overview](https://developer.hashicorp.com/terraform/cli)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75673-exam-terraform-associate-topic-1-question-4-discussion/)
+
+</details>
+
