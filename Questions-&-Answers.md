@@ -409,7 +409,7 @@ Topic #: 1
 **Terraform variables and outputs that set the “description” argument will store that description in the state file.**
 
 - A. True  
-- B. False ✅  
+- B. False  
 
 <details>
 <summary><strong>✅ Check Answer</strong></summary>
@@ -488,7 +488,7 @@ Topic #: 1
 - A. Run terraform refresh  
 - B. It will happen automatically  
 - C. Manually update the state file  
-- D. Run terraform import ✅  
+- D. Run terraform import  
 
 <details>
 <summary><strong>✅ Check Answer</strong></summary>
@@ -514,5 +514,41 @@ Topic #: 1
 - [Terraform Docs: Import](https://developer.hashicorp.com/terraform/cli/import)
 - [Terraform State Management](https://developer.hashicorp.com/terraform/language/state)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74312-exam-terraform-associate-topic-1-question-14-discussion/)
+
+</details>
+
+## Question #: 15  
+Topic #: 1
+
+**What is not processed when running a `terraform refresh`?**
+
+- A. State file  
+- B. Configuration file 
+- C. Credentials  
+- D. Cloud provider  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Configuration file**
+
+---
+
+### 📘 Explanation:
+
+- `terraform refresh` **updates the state file** with the current real-world values from the infrastructure provider.
+- It **uses the state file and provider configurations**, including credentials and cloud provider access.
+- However, the **configuration file is not re-evaluated** — meaning Terraform doesn’t re-process resource definitions or plans.
+- This command is purely for syncing state with the actual infrastructure, not for making changes based on configuration files.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Refresh](https://developer.hashicorp.com/terraform/cli/commands/refresh)
+- [Terraform State Overview](https://developer.hashicorp.com/terraform/language/state)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74493-exam-terraform-associate-topic-1-question-15-discussion/)
 
 </details>
