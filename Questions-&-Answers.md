@@ -213,3 +213,41 @@ Which of the following commands would you use first?**
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75954-exam-terraform-associate-topic-1-question-6-discussion/)
 
 </details>
+
+## Question #: 07  
+Topic #: 1
+
+**Which provisioner invokes a process on the resource created by Terraform?**
+
+- A. remote-exec ✅  
+- B. null-exec  
+- C. local-exec  
+- D. file  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. remote-exec**
+
+---
+
+### 📘 Explanation:
+
+- The **`remote-exec` provisioner** runs commands **on the remote resource** that Terraform creates (like an EC2 instance).
+- It uses SSH or WinRM to connect to the created resource and execute scripts or commands.
+- The **`local-exec`** provisioner runs commands **on the machine running Terraform** (locally).
+- **`null-exec`** is not a valid provisioner.
+- The **`file`** provisioner uploads files to a remote resource but does not run processes.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Provisioners - remote-exec](https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec)
+- [Terraform Docs: Provisioners - local-exec](https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec)
+- [Terraform Docs: Provisioners - file](https://developer.hashicorp.com/terraform/language/resources/provisioners/file)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74490-exam-terraform-associate-topic-1-question-7-discussion/)
+
+</details>
