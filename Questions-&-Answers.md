@@ -435,3 +435,4 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/78939-exam-terraform-associate-topic-1-question-12-discussion/)
 
 </details>
+
