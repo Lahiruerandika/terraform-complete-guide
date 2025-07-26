@@ -138,3 +138,36 @@ The standard workflow for deploying new infrastructure with Terraform includes:
 
 </details>
 
+## Question #: 05  
+Topic #: 1
+
+**A provider configuration block is required in every Terraform configuration.**
+
+- A. True  
+- B. False  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- A **provider block is not strictly required** in every Terraform configuration.
+- If a module or configuration only uses **child modules** and those modules include their own provider blocks, Terraform can still work.
+- Additionally, **default provider configurations** (like the `hashicorp/aws` provider) can be inherited from elsewhere in the configuration.
+- Terraform will also attempt to **auto-install and use a provider** based on resource type unless explicitly overridden.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Providers](https://developer.hashicorp.com/terraform/language/providers/configuration)
+- [Terraform Docs: Provider Requirements](https://developer.hashicorp.com/terraform/language/providers/requirements)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75674-exam-terraform-associate-topic-1-question-5-discussion/)
+
+</details>
