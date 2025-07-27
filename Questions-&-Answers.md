@@ -777,13 +777,13 @@ How would you solve this using infrastructure as code?**
 
 </details>
 
-## Question #: 16  
+## Question #: 22  
 Topic #: 1
 
 **`terraform init` initializes a sample `main.tf` file in the current directory.**
 
 - A. True  
-- B. False ✅  
+- B. False   
 
 <details>
 <summary><strong>✅ Check Answer</strong></summary>
@@ -811,5 +811,50 @@ Topic #: 1
 - [Terraform Docs: init](https://developer.hashicorp.com/terraform/cli/commands/init)
 - [Terraform Getting Started Guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/79070-exam-terraform-associate-topic-1-question-22-discussion/)
+
+</details>
+
+## Question #: 23  
+Topic #: 1
+
+**Which two steps are required to provision new infrastructure in the Terraform workflow? (Choose two.)**
+
+- A. Destroy  
+- B. Apply   
+- C. Import  
+- D. Init   
+- E. Validate  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answers:  
+**B. Apply**  
+**D. Init**
+
+---
+
+### 📘 Explanation:
+
+To **provision new infrastructure** using Terraform, the two essential steps are:
+
+- **`terraform init`**: Initializes the working directory, downloads provider plugins, and sets up the backend. This step is always required before any Terraform operations.
+- **`terraform apply`**: Executes the changes required to reach the desired state of the configuration — this is what actually **provisions** the infrastructure.
+
+Other options:
+
+- **`destroy`**: Tears down infrastructure, not provision it.
+- **`import`**: Brings existing resources under Terraform management — does not provision new ones.
+- **`validate`**: Checks whether the configuration is syntactically valid — useful, but not required to provision resources.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: init](https://developer.hashicorp.com/terraform/cli/commands/init)
+- [Terraform Docs: apply](https://developer.hashicorp.com/terraform/cli/commands/apply)
+- [Terraform Core Workflow](https://developer.hashicorp.com/terraform/cli/commands)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75678-exam-terraform-associate-topic-1-question-23-discussion/)
 
 </details>
