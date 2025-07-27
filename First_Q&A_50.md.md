@@ -1152,3 +1152,35 @@ Which command should you use to show all of the resources that will be deleted? 
 - [Terraform Docs: Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76904-exam-terraform-associate-topic-1-question-32-discussion/)
 </details>
+
+## Question #: 33  
+
+**Terraform can run on Windows or Linux, but it requires a Server version of the Windows operating system.**
+
+- A. True  
+- B. False   
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- **Terraform is a cross-platform CLI tool** that can run on Windows, macOS, and Linux.
+- It does **not require a Server edition** of Windows — it runs fine on **Windows 10, 11, or other consumer versions**.
+- The only requirement is that the OS architecture is supported (e.g., 64-bit) and necessary environment variables and tools are configured properly.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [Terraform System Requirements](https://developer.hashicorp.com/terraform/docs)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75682-exam-terraform-associate-topic-1-question-33-discussion/)
+
+</details>
