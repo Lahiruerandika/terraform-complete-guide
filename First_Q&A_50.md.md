@@ -1395,3 +1395,43 @@ Which options will produce a list of the IDs? (Choose two.)**
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74327-exam-terraform-associate-topic-1-question-39-discussion/)
 
 </details>
+
+## Question #: 40  
+
+**When using a module block to reference a module stored on the public Terraform Module Registry, how do you specify version 1.0.0?**
+
+- A. Modules stored on the public Terraform Module Registry do not support versioning  
+- B. Append ?ref=v1.0.0 argument to the source path  
+- C. Add `version = "1.0.0"` attribute to module block  
+- D. Nothing — modules stored on the public Terraform Module Registry always default to version 1.0.0  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Add `version = "1.0.0"` attribute to module block**
+
+---
+
+### 📘 Explanation:
+
+- Public modules from the Terraform Module Registry support versioning.
+- You specify the version using the `version` argument within the `module` block.
+- `?ref=v1.0.0` is used for Git-based sources, not registry modules.
+- Versioning allows better control and stability of infrastructure deployments.
+
+module "vpc" {
+    source  = "terraform-aws-modules/vpc/aws"
+    version = "1.0.0"
+  }
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Module Sources](https://developer.hashicorp.com/terraform/language/modules/sources)
+- [Terraform Registry Docs](https://registry.terraform.io/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76479-exam-terraform-associate-topic-1-question-40-discussion/)
+
+</details>
