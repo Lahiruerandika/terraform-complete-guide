@@ -776,3 +776,40 @@ How would you solve this using infrastructure as code?**
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74317-exam-terraform-associate-topic-1-question-21-discussion/)
 
 </details>
+
+## Question #: 16  
+Topic #: 1
+
+**`terraform init` initializes a sample `main.tf` file in the current directory.**
+
+- A. True  
+- B. False ✅  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- `terraform init` **does not create any `.tf` files**, including `main.tf`.
+- It is used to **initialize a working directory** containing existing Terraform configuration files.
+- Specifically, it:
+  - Downloads the required providers
+  - Initializes the backend
+  - Prepares the directory for Terraform operations
+- Creating `main.tf` is a **manual step** or something done by a project template — not by `terraform init`.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: init](https://developer.hashicorp.com/terraform/cli/commands/init)
+- [Terraform Getting Started Guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/79070-exam-terraform-associate-topic-1-question-22-discussion/)
+
+</details>
