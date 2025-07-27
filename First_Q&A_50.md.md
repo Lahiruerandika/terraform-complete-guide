@@ -1472,3 +1472,36 @@ Terraform Cloud is a SaaS offering by HashiCorp that enhances team-based Terrafo
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76327-exam-terraform-associate-topic-1-question-41-discussion/)
 
 </details>
+
+## Question #: 42  
+
+**Where does the Terraform local backend store its state?**
+
+- A. In the /tmp directory  
+- B. In the terraform file  
+- C. In the terraform.tfstate file 
+- D. In the user’s terraform.state file  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. In the terraform.tfstate file**
+
+---
+
+### 📘 Explanation:
+
+When using the **local backend**, Terraform stores the state of your infrastructure in a file named `terraform.tfstate` by default, located in the same directory where Terraform is run.
+
+This state file keeps track of resource metadata and mappings between the Terraform configuration and actual resources.
+
+---
+
+### 🔗 References:
+- [Terraform Docs – State](https://developer.hashicorp.com/terraform/language/state)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/78954-exam-terraform-associate-topic-1-question-42-discussion/)
+
+</details>
