@@ -858,3 +858,40 @@ Other options:
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75678-exam-terraform-associate-topic-1-question-23-discussion/)
 
 </details>
+
+## Question #: 24  
+Topic #: 1
+
+**Why would you use the `terraform taint` command?**
+
+- A. When you want to force Terraform to destroy a resource on the next apply  
+- B. When you want to force Terraform to destroy and recreate a resource on the next apply  
+- C. When you want Terraform to ignore a resource on the next apply  
+- D. When you want Terraform to destroy all the infrastructure in your workspace  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. When you want to force Terraform to destroy and recreate a resource on the next apply**
+
+---
+
+### 📘 Explanation:
+
+- `terraform taint` marks a specific resource as **tainted**, which means it is **scheduled for destruction and recreation** during the next `terraform apply`.
+- This is useful when a resource becomes **corrupted or misconfigured**, but Terraform doesn’t detect it as needing changes.
+- It does **not** destroy the resource immediately — only on the **next apply**.
+- It does **not** ignore or remove all resources like `destroy` would.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: taint](https://developer.hashicorp.com/terraform/cli/commands/taint)
+- [Terraform Resource Lifecycle](https://developer.hashicorp.com/terraform/language/resources/lifecycle)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75433-exam-terraform-associate-topic-1-question-24-discussion/)
+
+</details>
+
