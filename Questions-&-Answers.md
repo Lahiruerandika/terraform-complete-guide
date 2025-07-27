@@ -625,3 +625,39 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/81400-exam-terraform-associate-topic-1-question-17-discussion/)
 
 </details>
+
+## Question #: 18 
+Topic #: 1
+
+**You should store secret data in the same version control repository as your Terraform configuration.**
+
+- A. True  
+- B. False  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- Storing **sensitive data** (like secrets, passwords, or access keys) in version control is a **security risk**.
+- Terraform recommends using **secure methods** such as:
+  - Environment variables
+  - Encrypted secret management tools (e.g., Vault, AWS Secrets Manager)
+  - Terraform Cloud/Enterprise sensitive variable storage
+- Keeping secrets out of version control helps prevent **accidental exposure or leaks**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Sensitive Data](https://developer.hashicorp.com/terraform/docs/state/sensitive-data)
+- [HashiCorp Security Best Practices](https://developer.hashicorp.com/terraform/tutorials/configuration-language/sensitive-variables)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75203-exam-terraform-associate-topic-1-question-18-discussion/)
+</details>
+
