@@ -1084,3 +1084,42 @@ Which command should you use to show all of the resources that will be deleted? 
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74957-exam-terraform-associate-topic-1-question-30-discussion/)
 
 </details>
+
+## Question #: 31  
+Topic #: 1
+
+**Which of the following is the correct way to pass the value in the variable `num_servers` into a module with the input `servers`?**
+
+- A. `servers = num_servers`  
+- B. `servers = variable.num_servers`  
+- C. `servers = var(num_servers)`  
+- D. `servers = var.num_servers`  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. `servers = var.num_servers`**
+
+---
+
+### 📘 Explanation:
+
+- In Terraform, input variables are referenced using the **`var.<variable_name>`** syntax.
+- To pass the value of the variable `num_servers` into a module input called `servers`, you write:  
+  `servers = var.num_servers`
+- The other options are incorrect:
+  - **A** is missing the `var.` prefix.
+  - **B** uses incorrect syntax — `variable.` is not valid.
+  - **C** uses function-style syntax which Terraform does not support for variables.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Input Variables](https://developer.hashicorp.com/terraform/language/values/variables)
+- [Terraform Docs: Modules](https://developer.hashicorp.com/terraform/language/modules/syntax)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74319-exam-terraform-associate-topic-1-question-31-discussion/)
+
+</details>
