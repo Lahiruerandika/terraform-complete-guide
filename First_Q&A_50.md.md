@@ -1218,3 +1218,39 @@ Which command should you use to show all of the resources that will be deleted? 
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75683-exam-terraform-associate-topic-1-question-34-discussion/)
 
 </details>
+
+## Question #: 35
+
+**You have multiple team members collaborating on infrastructure as code (IaC) using Terraform, and want to apply formatting standards for readability.  
+How can you format Terraform HCL (HashiCorp Configuration Language) code according to standard Terraform style convention?**
+
+- A. Run the terraform fmt command during the code linting phase of your CI/CD process  
+- B. Designate one person in each team to review and format everyone’s code  
+- C. Manually apply two spaces indentation and align equal sign “=” characters in every Terraform file (*.tf)  
+- D. Write a shell script to transform Terraform files using tools such as AWK, Python, and sed  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Run the terraform fmt command during the code linting phase of your CI/CD process**
+
+---
+
+### 📘 Explanation:
+
+- `terraform fmt` **automatically formats Terraform code** according to the **official style guide**, ensuring consistent spacing, alignment, and readability.
+- This is the **recommended and most efficient approach**, especially in teams and automation pipelines.
+- Manual formatting or writing custom scripts is unnecessary and prone to inconsistency.
+- Assigning formatting responsibility to a single team member is inefficient and doesn’t scale.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: `terraform fmt`](https://developer.hashicorp.com/terraform/cli/commands/fmt)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74322-exam-terraform-associate-topic-1-question-35-discussion/)
+
+</details>
+
