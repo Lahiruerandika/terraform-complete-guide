@@ -941,3 +941,39 @@ Other options:
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75054-exam-terraform-associate-topic-1-question-26-discussion/)
 
 </details>
+
+## Question #: 27
+
+**Terraform can import modules from a number of sources — which of the following is not a valid source?**
+
+- A. FTP server 
+- B. GitHub repository  
+- C. Local path  
+- D. Terraform Module Registry  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. FTP server**
+
+---
+
+### 📘 Explanation:
+
+- Terraform supports importing modules from a variety of **valid sources**, including:
+  - **GitHub repositories** (e.g., via `git::https://github.com/user/repo`)
+  - **Local paths** (e.g., `./modules/network`)
+  - **Terraform Module Registry** (e.g., `terraform-aws-modules/vpc/aws`)
+- **FTP servers are not a supported module source**.
+- Supported sources include **Git, Mercurial, HTTP URLs (with archive files), local paths, and official registries** — but not FTP.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Module Sources](https://developer.hashicorp.com/terraform/language/modules/sources)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75680-exam-terraform-associate-topic-1-question-27-discussion/)
+
+</details>
