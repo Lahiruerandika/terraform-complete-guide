@@ -1435,3 +1435,40 @@ module "vpc" {
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76479-exam-terraform-associate-topic-1-question-40-discussion/)
 
 </details>
+
+## Question #: 41  
+
+**What features does the hosted service Terraform Cloud provide? (Choose two.)**
+
+- A. Automated infrastructure deployment visualization  
+- B. Automatic backups  
+- C. Remote state storage  
+- D. A web-based user interface (UI)  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answers:  
+**C. Remote state storage**  
+**D. A web-based user interface (UI)**
+
+---
+
+### 📘 Explanation:
+
+Terraform Cloud is a SaaS offering by HashiCorp that enhances team-based Terraform usage. Some key features include:
+
+- **Remote state storage**: Securely stores and manages the Terraform state file centrally.
+- **Web-based UI**: Allows users to manage workspaces, runs, and configurations through a browser.
+- **Collaboration features**: Such as role-based access control, notifications, and variable management.
+- Visualization and automated backups are **not native core features** of Terraform Cloud.
+
+---
+
+### 🔗 References:
+- [Terraform Cloud Overview](https://developer.hashicorp.com/terraform/cloud-docs)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76327-exam-terraform-associate-topic-1-question-41-discussion/)
+
+</details>
