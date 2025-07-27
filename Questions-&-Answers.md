@@ -695,3 +695,44 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74099-exam-terraform-associate-topic-1-question-19-discussion/)
 
 </details>
+
+## Question #: 20  
+Topic #: 1
+
+**You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with  
+Terraform and want to manage these VMs using Terraform instead.  
+What are the two things you must do to achieve this? (Choose two.)**
+
+- A. Provision new VMs using Terraform with the same VM names  
+- B. Use the terraform import command for the existing VMs   
+- C. Write Terraform configuration for the existing VMs  
+- D. Run the terraform import-gcp command  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answers:  
+**B. Use the terraform import command for the existing VMs**  
+**C. Write Terraform configuration for the existing VMs**
+
+---
+
+### 📘 Explanation:
+
+- Terraform cannot automatically discover or manage resources that were created outside of its configuration.
+- To bring existing infrastructure (like GCP VMs created with `gcloud`) under Terraform management, you must:
+  1. **Write Terraform configuration** that matches the resources (resource type, names, settings).
+  2. **Use `terraform import`** to associate those existing resources with the Terraform state.
+- `terraform import-gcp` is **not a valid Terraform command**.
+- Re-provisioning (Option A) would result in resource conflicts or duplication.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Import](https://developer.hashicorp.com/terraform/cli/import)
+- [Managing Existing Infrastructure](https://developer.hashicorp.com/terraform/tutorials/state/resource-import)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74316-exam-terraform-associate-topic-1-question-20-discussion/)
+
+</details>
