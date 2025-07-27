@@ -1505,3 +1505,36 @@ This state file keeps track of resource metadata and mappings between the Terraf
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/78954-exam-terraform-associate-topic-1-question-42-discussion/)
 
 </details>
+
+## Question #: 43  
+
+**Which option can not be used to keep secrets out of Terraform configuration files?**
+
+- A. A Terraform provider  
+- B. Environment variables  
+- C. A -var flag  
+- D. secure string  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. secure string**
+
+---
+
+### 📘 Explanation:
+
+- **`secure string`** is **not a recognized Terraform feature** or construct. It might refer to a concept from another tool (like Azure), but it’s not valid in Terraform.
+- **Environment variables**, the **`-var` flag**, and secure storage through a **Terraform provider** (like Vault or AWS Secrets Manager) **are valid ways to keep secrets out** of `.tf` files.
+
+---
+
+### 🔗 References:
+- [Terraform Docs – Input Variables](https://developer.hashicorp.com/terraform/language/values/variables)
+- [Terraform Docs – Sensitive Data Handling](https://developer.hashicorp.com/terraform/docs/state/sensitive-data)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75093-exam-terraform-associate-topic-1-question-43-discussion/)
+
+</details>
