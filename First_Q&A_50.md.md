@@ -1184,3 +1184,37 @@ Which command should you use to show all of the resources that will be deleted? 
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75682-exam-terraform-associate-topic-1-question-33-discussion/)
 
 </details>
+
+## Question #: 34  
+
+**What does the default “local” Terraform backend store?**
+
+- A. tfplan files  
+- B. Terraform binary  
+- C. Provider plugins  
+- D. State file  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. State file**
+
+---
+
+### 📘 Explanation:
+
+- The **default "local" backend** in Terraform stores the **Terraform state file (`terraform.tfstate`)** on the **local disk**.
+- This file tracks the real-world infrastructure managed by Terraform and is essential for planning and applying changes.
+- `tfplan` files, provider plugins, and binaries are not part of what the backend manages — only the **state and state history** are handled.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Backends - Local](https://developer.hashicorp.com/terraform/language/settings/backends/local)
+- [Terraform Docs: State](https://developer.hashicorp.com/terraform/language/state)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75683-exam-terraform-associate-topic-1-question-34-discussion/)
+
+</details>
