@@ -1572,3 +1572,38 @@ This state file keeps track of resource metadata and mappings between the Terraf
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74995-exam-terraform-associate-topic-1-question-44-discussion/)
 
 </details>
+
+## Question #: 45
+
+**Only the user that generated a plan may apply it.**
+
+### Options:
+- A. True  
+- B. False ✅
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+
+### ✅ Correct Answer:
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+Terraform **plans** can be **applied by any user**, not just the one who generated the plan, **as long as the plan file (`.tfplan`) is accessible** to them.
+
+- The plan is not user-bound; it’s simply a saved execution plan.
+- This allows workflows where one team member generates a plan and another team member reviews and applies it.
+- However, you should ensure the plan has not become outdated due to changes in the infrastructure or code since it was generated.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Plan and Apply](https://developer.hashicorp.com/terraform/cli/commands/plan)
+- [Terraform Docs: Apply](https://developer.hashicorp.com/terraform/cli/commands/apply)
+
+</details>
