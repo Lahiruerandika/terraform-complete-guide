@@ -1086,7 +1086,6 @@ Which command should you use to show all of the resources that will be deleted? 
 </details>
 
 ## Question #: 31  
-Topic #: 1
 
 **Which of the following is the correct way to pass the value in the variable `num_servers` into a module with the input `servers`?**
 
@@ -1122,4 +1121,34 @@ Topic #: 1
 - [Terraform Docs: Modules](https://developer.hashicorp.com/terraform/language/modules/syntax)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74319-exam-terraform-associate-topic-1-question-31-discussion/)
 
+</details>
+
+## Question #: 32 
+
+**A Terraform provisioner must be nested inside a resource configuration block.**
+
+- A. True 
+- B. False  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. True**
+
+---
+
+### 📘 Explanation:
+
+- **Provisioners** in Terraform (like `remote-exec` or `local-exec`) **must be defined inside a resource block**, as they are tied to the lifecycle of that specific resource.
+- They are typically used for **bootstrapping or configuration tasks** after the resource has been created.
+- You cannot define a provisioner **outside a resource block** or apply it globally.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76904-exam-terraform-associate-topic-1-question-32-discussion/)
 </details>
