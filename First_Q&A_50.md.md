@@ -1579,7 +1579,7 @@ This state file keeps track of resource metadata and mappings between the Terraf
 
 ### Options:
 - A. True  
-- B. False ✅
+- B. False
 
 <details>
 <summary><strong>✅ Check Answer</strong></summary>
@@ -1605,5 +1605,6 @@ Terraform **plans** can be **applied by any user**, not just the one who generat
 ### 🔗 References:
 - [Terraform Docs: Plan and Apply](https://developer.hashicorp.com/terraform/cli/commands/plan)
 - [Terraform Docs: Apply](https://developer.hashicorp.com/terraform/cli/commands/apply)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74958-exam-terraform-associate-topic-1-question-45-discussion/)
 
 </details>
