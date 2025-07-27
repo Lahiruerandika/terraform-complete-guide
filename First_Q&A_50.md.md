@@ -1538,3 +1538,37 @@ This state file keeps track of resource metadata and mappings between the Terraf
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75093-exam-terraform-associate-topic-1-question-43-discussion/)
 
 </details>
+
+## Question #: 44  
+
+**What is one disadvantage of using dynamic blocks in Terraform?**
+
+- A. They cannot be used to loop through a list of values  
+- B. Dynamic blocks can construct repeatable nested blocks  
+- C. They make configuration harder to read and understand   
+- D. Terraform will run more slowly  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. They make configuration harder to read and understand**
+
+---
+
+### 📘 Explanation:
+
+- **Dynamic blocks** are powerful tools in Terraform used for **constructing repeatable nested blocks**, especially when the number or content of those blocks is variable.
+- However, one **notable disadvantage** is that they can **make configuration more complex** and **harder to read and understand**, especially for teams unfamiliar with the structure.
+- Options **A** and **B** are incorrect as dynamic blocks are **specifically used to loop through** lists or maps to create nested blocks.
+- Option **D** is not accurate — using dynamic blocks does not significantly impact Terraform's execution speed.
+
+---
+
+### 🔗 References:
+- [Terraform Docs – Dynamic Blocks](https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74995-exam-terraform-associate-topic-1-question-44-discussion/)
+
+</details>
