@@ -1324,3 +1324,40 @@ How can you format Terraform HCL (HashiCorp Configuration Language) code accordi
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76384-exam-terraform-associate-topic-1-question-37-discussion/)
 
 </details>
+
+## Question #: 38 
+
+**You have declared a variable called `var.list` which is a list of objects that all have an attribute `id`.  
+Which options will produce a list of the IDs? (Choose two.)**
+
+- A. `{ for o in var.list : o => o.id }`  
+- B. `var.list[*].id` 
+- C. `[ var.list[*].id ]`  
+- D. `[ for o in var.list : o.id ]`  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answers:  
+**B. `var.list[*].id`**  
+**D. `[ for o in var.list : o.id ]`**
+
+---
+
+### 📘 Explanation:
+
+- `var.list[*].id` uses **splat syntax**, which extracts the `id` attribute from each object in the list — resulting in a new list of `id` values.
+- `[ for o in var.list : o.id ]` is a **for-expression**, which iterates over the list and collects `o.id` for each item — also returning a list of `id` values.
+- Option **A** creates a **map**, not a list.
+- Option **C** wraps the list again, resulting in a **list of lists**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: For Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
+- [Terraform Docs: Splat Expressions](https://developer.hashicorp.com/terraform/language/expressions/splat)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75092-exam-terraform-associate-topic-1-question-38-discussion/)
+
+</details>
