@@ -661,3 +661,37 @@ Topic #: 1
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75203-exam-terraform-associate-topic-1-question-18-discussion/)
 </details>
 
+## Question #: 19 
+Topic #: 1
+
+**Which of the following is not a valid string function in Terraform?**
+
+- A. split  
+- B. join  
+- C. slice 
+- D. chomp  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. slice**
+
+---
+
+### 📘 Explanation:
+
+- **`split`** and **`join`** are valid string functions in Terraform, used to break and combine strings.
+- **`chomp`** is also a valid Terraform function, used to remove trailing newline characters.
+- **`slice`** is **not a valid string function** in Terraform — it's not part of the Terraform function library for strings or collections.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Functions](https://developer.hashicorp.com/terraform/language/functions)
+- [Terraform String Functions](https://developer.hashicorp.com/terraform/language/functions#string-functions)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74099-exam-terraform-associate-topic-1-question-19-discussion/)
+
+</details>
