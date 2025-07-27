@@ -1361,3 +1361,37 @@ Which options will produce a list of the IDs? (Choose two.)**
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75092-exam-terraform-associate-topic-1-question-38-discussion/)
 
 </details>
+
+## Question #: 39 
+
+**Which argument(s) is (are) required when declaring a Terraform variable?**
+
+- A. type  
+- B. default  
+- C. description  
+- D. All of the above  
+- E. None of the above  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**E. None of the above**
+
+---
+
+### 📘 Explanation:
+
+- When declaring a variable in Terraform, **none** of the arguments (`type`, `default`, or `description`) are **required**.
+- All these arguments are **optional**.
+- It is considered good practice to define these arguments to improve clarity and enforce type safety, but Terraform does not mandate them.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Input Variables](https://developer.hashicorp.com/terraform/language/values/variables)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74327-exam-terraform-associate-topic-1-question-39-discussion/)
+
+</details>
