@@ -1016,7 +1016,6 @@ Other options:
 </details>
 
 ## Question #: 29  
-Topic #: 1
 
 **`terraform validate` validates the syntax of Terraform files.**
 
@@ -1045,5 +1044,43 @@ Topic #: 1
 - [Terraform Docs: validate](https://developer.hashicorp.com/terraform/cli/commands/validate)
 - [Terraform Syntax and Configuration](https://developer.hashicorp.com/terraform/language)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76192-exam-terraform-associate-topic-1-question-29-discussion/)
+
+</details>
+
+## Question #: 30  
+
+**You have used Terraform to create an ephemeral development environment in the cloud and are now ready to destroy all the infrastructure described by your  
+Terraform configuration. To be safe, you would like to first see all the infrastructure that will be deleted by Terraform.  
+Which command should you use to show all of the resources that will be deleted? (Choose two.)**
+
+- A. Run `terraform plan -destroy`. 
+- B. This is not possible. You can only show resources that will be created.  
+- C. Run `terraform state rm *`.  
+- D. Run `terraform destroy` and it will first output all the resources that will be deleted before prompting for approval. 
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answers:  
+**A. Run `terraform plan -destroy`.**  
+**D. Run `terraform destroy` and it will first output all the resources that will be deleted before prompting for approval.**
+
+---
+
+### 📘 Explanation:
+
+- **`terraform plan -destroy`**: Shows the **execution plan** for destroying all resources, without actually making any changes.
+- **`terraform destroy`**: Before deleting anything, it **displays the full list of resources** that will be destroyed and asks for confirmation.
+- **Option B is incorrect**: Terraform can absolutely show resources that will be destroyed.
+- **Option C is incorrect**: `terraform state rm` removes resources from state without destroying them, which can leave real resources unmanaged.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: plan -destroy](https://developer.hashicorp.com/terraform/cli/commands/plan#destroy-plans)
+- [Terraform Docs: destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74957-exam-terraform-associate-topic-1-question-30-discussion/)
 
 </details>
