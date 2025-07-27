@@ -895,3 +895,35 @@ Topic #: 1
 
 </details>
 
+## Question #: 25  
+Topic #: 1
+
+**Terraform requires the Go runtime as a prerequisite for installation.**
+
+- A. True  
+- B. False   
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- Although **Terraform is written in Go**, it is distributed as a **precompiled binary**.
+- This means users **do not need to install the Go runtime** to use Terraform.
+- All you need is to **download the appropriate binary** for your system and add it to your system's PATH.
+
+---
+
+### 🔗 References:
+- [Terraform Installation Guide](https://developer.hashicorp.com/terraform/downloads)
+- [Terraform GitHub Releases](https://github.com/hashicorp/terraform/releases)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76734-exam-terraform-associate-topic-1-question-25-discussion/)
+
+</details>
