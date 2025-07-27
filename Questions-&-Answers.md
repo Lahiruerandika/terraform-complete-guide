@@ -977,3 +977,40 @@ Other options:
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75680-exam-terraform-associate-topic-1-question-27-discussion/)
 
 </details>
+
+## Question #: 28  
+
+**Which of the following is available only in Terraform Enterprise or Cloud workspaces and not in Terraform CLI?**
+
+- A. Secure variable storage 
+- B. Support for multiple cloud providers  
+- C. Dry runs with terraform plan  
+- D. Using the workspace as a data source  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Secure variable storage**
+
+---
+
+### 📘 Explanation:
+
+- **Terraform Enterprise and Terraform Cloud** offer **secure, encrypted variable storage** through their web UI or API, allowing users to safely store sensitive values like API keys or passwords.
+- This feature is **not available in Terraform CLI**, where variables are passed via environment variables, `.tfvars` files, or CLI arguments — all of which are **less secure**.
+- The other options are available in both CLI and Cloud/Enterprise:
+  - **Multiple cloud providers**: Supported by both.
+  - **`terraform plan` (dry runs)**: Core CLI feature.
+  - **Workspace as a data source**: Available in CLI as well.
+
+---
+
+### 🔗 References:
+- [Terraform Cloud: Input Variables](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/variables)
+- [Terraform CLI: Input Variables](https://developer.hashicorp.com/terraform/language/values/variables)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74318-exam-terraform-associate-topic-1-question-28-discussion/)
+
+</details>
