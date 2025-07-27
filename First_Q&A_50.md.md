@@ -1254,3 +1254,36 @@ How can you format Terraform HCL (HashiCorp Configuration Language) code accordi
 
 </details>
 
+## Question #: 36 
+
+**What value does the Terraform Cloud/Terraform Enterprise private module registry provide over the public Terraform Module Registry?**
+
+- A. The ability to share modules with public Terraform users and members of Terraform Enterprise Organizations  
+- B. The ability to tag modules by version or release  
+- C. The ability to restrict modules to members of Terraform Cloud or Enterprise organizations 
+- D. The ability to share modules publicly with any user of Terraform  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. The ability to restrict modules to members of Terraform Cloud or Enterprise organizations**
+
+---
+
+### 📘 Explanation:
+
+- The **private module registry** in Terraform Cloud/Enterprise allows **controlled sharing** of modules **within an organization**.
+- Unlike the **public registry**, where modules are accessible by anyone, the **private registry restricts access** to users in the organization.
+- This helps enforce **standards, security, and reuse** across teams without exposing code externally.
+- Tagging modules by version is available in both public and private registries, so it is **not exclusive** to Terraform Cloud/Enterprise.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Private Module Registry](https://developer.hashicorp.com/terraform/cloud-docs/registry/private)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74324-exam-terraform-associate-topic-1-question-36-discussion/)
+
+</details>
