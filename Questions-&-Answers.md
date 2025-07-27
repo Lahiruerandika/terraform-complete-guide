@@ -1014,3 +1014,36 @@ Other options:
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74318-exam-terraform-associate-topic-1-question-28-discussion/)
 
 </details>
+
+## Question #: 29  
+Topic #: 1
+
+**`terraform validate` validates the syntax of Terraform files.**
+
+- A. True  
+- B. False  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. True**
+
+---
+
+### 📘 Explanation:
+
+- `terraform validate` is used to **check whether a configuration is syntactically valid**.
+- It parses the Terraform files and ensures that the configuration is **internally consistent**, but it does **not access remote services or validate values**.
+- It’s a helpful command to run **early in your workflow** to catch syntax errors before applying.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: validate](https://developer.hashicorp.com/terraform/cli/commands/validate)
+- [Terraform Syntax and Configuration](https://developer.hashicorp.com/terraform/language)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76192-exam-terraform-associate-topic-1-question-29-discussion/)
+
+</details>
