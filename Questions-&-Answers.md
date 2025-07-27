@@ -598,7 +598,7 @@ Topic #: 1
 
 **If a module uses a local value, you can expose that value with a Terraform output.**
 
-- A. True ✅  
+- A. True 
 - B. False  
 
 <details>
@@ -734,5 +734,45 @@ What are the two things you must do to achieve this? (Choose two.)**
 - [Terraform Docs: Import](https://developer.hashicorp.com/terraform/cli/import)
 - [Managing Existing Infrastructure](https://developer.hashicorp.com/terraform/tutorials/state/resource-import)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74316-exam-terraform-associate-topic-1-question-20-discussion/)
+
+</details>
+
+## Question #: 21  
+Topic #: 1
+
+**You have recently started a new job at a retailer as an engineer. As part of this new role, you have been tasked with evaluating multiple outages that occurred during peak shopping time during the holiday season. Your investigation found that the team is manually deploying new compute instances and configuring each compute instance manually. This has led to inconsistent configuration between each compute instance.  
+How would you solve this using infrastructure as code?**
+
+- A. Implement a ticketing workflow that makes engineers submit a ticket before manually provisioning and configuring a resource  
+- B. Implement a checklist that engineers can follow when configuring compute instances  
+- C. Replace the compute instance type with a larger version to reduce the number of required deployments  
+- D. Implement a provisioning pipeline that deploys infrastructure configurations committed to your version control system following code reviews  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. Implement a provisioning pipeline that deploys infrastructure configurations committed to your version control system following code reviews**
+
+---
+
+### 📘 Explanation:
+
+- **Infrastructure as Code (IaC)** enables consistent, repeatable deployments by defining infrastructure in code and managing it through version control.
+- Option D addresses the **core problem of manual, inconsistent provisioning** by introducing:
+  - Automated deployments
+  - Peer-reviewed changes
+  - Version-controlled infrastructure definitions
+- Options A and B still rely on **manual processes**, which are prone to error.
+- Option C addresses performance but **not configuration consistency**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Infrastructure as Code](https://developer.hashicorp.com/terraform/intro)
+- [IaC Best Practices](https://developer.hashicorp.com/terraform/tutorials/automation/github-actions)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74317-exam-terraform-associate-topic-1-question-21-discussion/)
 
 </details>
