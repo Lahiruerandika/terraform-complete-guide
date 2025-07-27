@@ -1424,7 +1424,7 @@ Which options will produce a list of the IDs? (Choose two.)**
 
 module "vpc" {
     source  = "terraform-aws-modules/vpc/aws"
-    /n version = "1.0.0"
+      version = "1.0.0"
   }
 
 ---
