@@ -905,3 +905,39 @@ Other options:
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76734-exam-terraform-associate-topic-1-question-25-discussion/)
 
 </details>
+
+## Question #: 26  
+
+**When should you use the `force-unlock` command?**
+
+- A. You see a status message that you cannot acquire the lock  
+- B. You have a high priority change  
+- C. Automatic unlocking failed  
+- D. You apply failed due to a state lock  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Automatic unlocking failed**
+
+---
+
+### 📘 Explanation:
+
+- Terraform uses **state locking** to prevent simultaneous operations on the same state.
+- In some cases, such as an **interrupted apply**, the lock may remain active.
+- If Terraform fails to automatically release this lock, you can use `terraform force-unlock` to **manually remove the lock**.
+- It should be used **with caution** to avoid potential state corruption.
+- Simply having a failed apply or seeing a lock message does not justify its use unless **automatic unlocking has already failed**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: force-unlock](https://developer.hashicorp.com/terraform/cli/commands/force-unlock)
+- [Terraform State Locking](https://developer.hashicorp.com/terraform/language/state/locking)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75054-exam-terraform-associate-topic-1-question-26-discussion/)
+
+</details>
