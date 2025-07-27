@@ -1287,3 +1287,40 @@ How can you format Terraform HCL (HashiCorp Configuration Language) code accordi
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74324-exam-terraform-associate-topic-1-question-36-discussion/)
 
 </details>
+
+## Question #: 37  
+
+**Which task does `terraform init` not perform?**
+
+- A. Sources all providers present in the configuration and ensures they are downloaded and available locally  
+- B. Connects to the backend  
+- C. Sources any modules and copies the configuration locally  
+- D. Validates all required variables are present  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. Validates all required variables are present**
+
+---
+
+### 📘 Explanation:
+
+- `terraform init` is responsible for:
+  - Downloading provider plugins.
+  - Connecting to and configuring the backend.
+  - Downloading and initializing any modules.
+- However, it **does not validate required input variables**. That task is handled during `terraform plan` or `terraform apply`.
+- Input variable validation happens **only when a plan is created or executed**, not during initialization.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: init](https://developer.hashicorp.com/terraform/cli/commands/init)
+- [Terraform Docs: Input Variables](https://developer.hashicorp.com/terraform/language/values/variables)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76384-exam-terraform-associate-topic-1-question-37-discussion/)
+
+</details>
