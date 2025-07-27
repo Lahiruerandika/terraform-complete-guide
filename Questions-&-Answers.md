@@ -61,7 +61,6 @@ If someone makes **manual changes** to infrastructure outside of Terraform (like
 </details>
 
 ## Question #: 03  
-Topic #: 1
 
 **How is the Terraform remote backend different than other state backends such as S3, Consul, etc.?**
 
@@ -139,7 +138,6 @@ The standard workflow for deploying new infrastructure with Terraform includes:
 </details>
 
 ## Question #: 05  
-Topic #: 1
 
 **A provider configuration block is required in every Terraform configuration.**
 
@@ -173,7 +171,6 @@ Topic #: 1
 </details>
 
 ## Question #: 06  
-Topic #: 1
 
 **You run a local-exec provisioner in a null resource called `null_resource.run_script` and realize that you need to rerun the script.  
 Which of the following commands would you use first?**
@@ -215,7 +212,6 @@ Which of the following commands would you use first?**
 </details>
 
 ## Question #: 07  
-Topic #: 1
 
 **Which provisioner invokes a process on the resource created by Terraform?**
 
@@ -253,7 +249,6 @@ Topic #: 1
 </details>
 
 ## Question #: 08  
-Topic #: 1
 
 **Which of the following is not true of Terraform providers?**
 
@@ -292,7 +287,6 @@ Topic #: 1
 </details>
 
 ## Question #: 09  
-Topic #: 1
 
 **What command does Terraform require the first time you run it within a configuration directory?**
 
@@ -330,7 +324,6 @@ Topic #: 1
 </details>
 
 ## Question #: 10  
-Topic #: 1
 
 **You have deployed a new webapp with a public IP address on a cloud provider. However, you did not create any outputs for your code.  
 What is the best method to quickly find the IP address of the resource you deployed?**
@@ -369,7 +362,6 @@ What is the best method to quickly find the IP address of the resource you deplo
 </details>
 
 ## Question #: 11  
-Topic #: 1
 
 **Which of the following is not a key principle of infrastructure as code?**
 
@@ -404,7 +396,6 @@ Topic #: 1
 </details>
 
 ## Question #: 12  
-Topic #: 1
 
 **Terraform variables and outputs that set the “description” argument will store that description in the state file.**
 
@@ -437,7 +428,6 @@ Topic #: 1
 </details>
 
 ## Question #: 13  
-Topic #: 1
 
 **What is the provider for this fictitious resource?**
 
@@ -481,7 +471,6 @@ Topic #: 1
 </details>
 
 ## Question #: 14 
-Topic #: 1
 
 **If you manually destroy infrastructure, what is the best practice reflecting this change in Terraform?**
 
@@ -518,7 +507,6 @@ Topic #: 1
 </details>
 
 ## Question #: 15  
-Topic #: 1
 
 **What is not processed when running a `terraform refresh`?**
 
@@ -554,7 +542,6 @@ Topic #: 1
 </details>
 
 ## Question #: 16 
-Topic #: 1
 
 **What information does the public Terraform Module Registry automatically expose about published modules?**
 
@@ -594,7 +581,6 @@ This allows users to understand how to use a module **without needing to read al
 </details>
 
 ## Question #: 17  
-Topic #: 1
 
 **If a module uses a local value, you can expose that value with a Terraform output.**
 
@@ -627,7 +613,6 @@ Topic #: 1
 </details>
 
 ## Question #: 18 
-Topic #: 1
 
 **You should store secret data in the same version control repository as your Terraform configuration.**
 
@@ -662,7 +647,6 @@ Topic #: 1
 </details>
 
 ## Question #: 19 
-Topic #: 1
 
 **Which of the following is not a valid string function in Terraform?**
 
@@ -697,7 +681,6 @@ Topic #: 1
 </details>
 
 ## Question #: 20  
-Topic #: 1
 
 **You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with  
 Terraform and want to manage these VMs using Terraform instead.  
@@ -738,7 +721,6 @@ What are the two things you must do to achieve this? (Choose two.)**
 </details>
 
 ## Question #: 21  
-Topic #: 1
 
 **You have recently started a new job at a retailer as an engineer. As part of this new role, you have been tasked with evaluating multiple outages that occurred during peak shopping time during the holiday season. Your investigation found that the team is manually deploying new compute instances and configuring each compute instance manually. This has led to inconsistent configuration between each compute instance.  
 How would you solve this using infrastructure as code?**
@@ -778,7 +760,6 @@ How would you solve this using infrastructure as code?**
 </details>
 
 ## Question #: 22  
-Topic #: 1
 
 **`terraform init` initializes a sample `main.tf` file in the current directory.**
 
@@ -815,7 +796,6 @@ Topic #: 1
 </details>
 
 ## Question #: 23  
-Topic #: 1
 
 **Which two steps are required to provision new infrastructure in the Terraform workflow? (Choose two.)**
 
@@ -860,7 +840,6 @@ Other options:
 </details>
 
 ## Question #: 24  
-Topic #: 1
 
 **Why would you use the `terraform taint` command?**
 
@@ -896,7 +875,6 @@ Topic #: 1
 </details>
 
 ## Question #: 25  
-Topic #: 1
 
 **Terraform requires the Go runtime as a prerequisite for installation.**
 
