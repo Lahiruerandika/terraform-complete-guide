@@ -682,8 +682,7 @@ This allows users to understand how to use a module **without needing to read al
 
 ## Question #: 20  
 
-**You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with  
-Terraform and want to manage these VMs using Terraform instead.  
+**You have provisioned some virtual machines (VMs) on Google Cloud Platform (GCP) using the gcloud command line tool. However, you are standardizing with Terraform and want to manage these VMs using Terraform instead.  
 What are the two things you must do to achieve this? (Choose two.)**
 
 - A. Provision new VMs using Terraform with the same VM names  
@@ -1049,8 +1048,7 @@ Other options:
 
 ## Question #: 30  
 
-**You have used Terraform to create an ephemeral development environment in the cloud and are now ready to destroy all the infrastructure described by your  
-Terraform configuration. To be safe, you would like to first see all the infrastructure that will be deleted by Terraform.  
+**You have used Terraform to create an ephemeral development environment in the cloud and are now ready to destroy all the infrastructure described by your Terraform configuration. To be safe, you would like to first see all the infrastructure that will be deleted by Terraform.  
 Which command should you use to show all of the resources that will be deleted? (Choose two.)**
 
 - A. Run `terraform plan -destroy`. 
