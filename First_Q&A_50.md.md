@@ -431,9 +431,7 @@ What is the best method to quickly find the IP address of the resource you deplo
 
 **What is the provider for this fictitious resource?**
 
-"resource "aws_vpc" "main" {
-  name = "test"
-}"
+![alt text](image-1.png)
 
 - A. vpc  
 - B. main  
