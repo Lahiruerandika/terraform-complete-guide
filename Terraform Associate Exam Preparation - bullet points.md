@@ -215,4 +215,68 @@ Common meta-arguments:
 
 ---
 
+# ✅ Terraform Associate Exam Preparation – Bullet Points (Part 3)
 
+---
+
+## 1. Sentinel Policy as Code
+
+- Framework used to enforce security and compliance rules.
+- Runs after `terraform plan` but before `terraform apply`.
+- Use cases:
+  - Enforcing tagging policies for EC2 instances.
+  - Checking if an S3 bucket is encrypted.
+
+---
+
+## 2. Terraform Graph (`terraform graph`)
+
+- Visual representation of resource dependencies.
+- Generates output in DOT format, which can be converted into an image.
+
+---
+
+## 3. Input Variables & tfvars Files
+
+- `terraform.tfvars` allows multi-environment deployments (e.g., Dev, Prod).
+- Select a specific variable file using:  
+  `terraform plan -var-file="prod.tfvars"`
+- Variable precedence (last one wins):
+  1. Environment variables (with `TF_VAR_` prefix)
+  2. `terraform.tfvars` or `.tfvars.json` files
+  3. `auto.tfvars` or `.auto.tfvars.json` files
+  4. Command-line variables (`-var` and `-var-file`)
+- Reserved variable names that cannot be used:
+  - `count`, `depends_on`, `for_each`, `lifecycle`, `providers`, `source`
+
+---
+
+## 4. Terraform State & Output Values
+
+- State file (`terraform.tfstate`) does **not** store input variables.
+- Output values **are** stored in the state file.
+- Use `terraform output` to extract values from the state.
+
+---
+
+## 5. Terraform Console (`terraform console`)
+
+- Used for testing Terraform expressions and functions interactively.
+
+---
+
+## 6. Dependency Lock File (`terraform.lock.hcl`)
+
+- Locks provider versions to avoid unexpected upgrades.
+- `terraform init -upgrade` updates the lock file.
+
+---
+
+## 7. Dependencies in Terraform
+
+- **Implicit dependency**: Terraform automatically determines resource order.
+
+  ```hcl
+  resource "aws_eip" "example" {
+    instance = aws_instance.myec2.id  # Implicit dependency
+  }
