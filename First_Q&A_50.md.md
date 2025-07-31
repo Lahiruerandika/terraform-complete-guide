@@ -1646,3 +1646,81 @@ What value should you enter for the `ami` argument in the AWS instance resource?
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76717-exam-terraform-associate-topic-1-question-46-discussion/)
 
 </details>
+
+## Question #: 47 
+
+**You have never used Terraform before and would like to test it out using a shared team account for a cloud provider. The shared team account already contains 15 virtual machines (VM). You develop a Terraform configuration containing one VM, perform `terraform apply`, and see that your VM was created successfully.  
+What should you do to delete the newly-created VM with Terraform?**
+
+- A. The Terraform state file contains all 16 VMs in the team account. Execute `terraform destroy` and select the newly-created VM.  
+- B. The Terraform state file only contains the one new VM. Execute `terraform destroy`. 
+- C. Delete the Terraform state file and execute `terraform apply`.  
+- D. Delete the VM using the cloud provider console and `terraform apply` to apply the changes to the Terraform state file.  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. The Terraform state file only contains the one new VM. Execute `terraform destroy`.**
+
+---
+
+### 📘 Explanation:
+
+- Terraform only manages **resources defined in its configuration and tracked in its state file**.  
+- Since you created **only one VM** with Terraform, the **state file contains just that VM**, not the 15 existing VMs created outside Terraform.  
+- Running `terraform destroy` will safely delete the **one VM** created by Terraform without affecting the other 15.  
+- Option **A** is incorrect because Terraform does not automatically manage resources not defined in its configuration.  
+- Option **C** is dangerous: deleting the state file causes Terraform to lose track of its resources, leaving the VM orphaned.  
+- Option **D** is wrong because manually deleting the VM in the console will leave the Terraform state out of sync.  
+
+---
+
+### 🔗 References:
+- [Terraform Docs: State](https://developer.hashicorp.com/terraform/language/state)
+- [Terraform Docs: Destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/75952-exam-terraform-associate-topic-1-question-48-discussion/)
+
+</details>
+
+## Question #: 48 
+
+**What is the name assigned by Terraform to reference this resource?**
+
+![alt text](image.png)
+
+- A. dev 
+- B. azurerm_resource_group  
+- C. azurerm  
+- D. test  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. dev**
+
+---
+
+### 📘 Explanation:
+
+- The format of a Terraform resource reference is:  
+  `<RESOURCE_TYPE>.<RESOURCE_NAME>`
+- In this case:  
+  - **Resource type:** `azurerm_resource_group`  
+  - **Resource name:** `dev`  
+- Therefore, the resource is referenced as:  
+  `azurerm_resource_group.dev`
+- The `name = "test"` inside the block is an **argument** sent to Azure, not the Terraform reference name.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Resources](https://developer.hashicorp.com/terraform/language/resources/syntax)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74438-exam-terraform-associate-topic-1-question-49-discussion/)
+
+</details>
