@@ -431,7 +431,7 @@ What is the best method to quickly find the IP address of the resource you deplo
 
 **What is the provider for this fictitious resource?**
 
-![alt text](image-1.png)
+![alt text](attached-images/image-1.png)
 
 - A. vpc  
 - B. main  
@@ -1610,7 +1610,7 @@ Terraform **plans** can be **applied by any user**, not just the one who generat
 **Examine the following Terraform configuration, which uses the data source for an AWS AMI.  
 What value should you enter for the `ami` argument in the AWS instance resource?**
 
-![alt text](31d56970-ef4c-4b9b-ace9-0b734289a343.png)
+![alt text](attached-images/31d56970-ef4c-4b9b-ace9-0b734289a343.png)
 
 - A. aws_ami.ubuntu  
 - B. data.aws_ami.ubuntu  
@@ -1687,7 +1687,7 @@ What should you do to delete the newly-created VM with Terraform?**
 
 **What is the name assigned by Terraform to reference this resource?**
 
-![alt text](image.png)
+![alt text](attached-images/image.png)
 
 - A. dev 
 - B. azurerm_resource_group  
