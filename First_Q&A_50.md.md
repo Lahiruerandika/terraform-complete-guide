@@ -1608,3 +1608,43 @@ Terraform **plans** can be **applied by any user**, not just the one who generat
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74958-exam-terraform-associate-topic-1-question-45-discussion/)
 
 </details>
+
+## Question #: 46
+
+**Examine the following Terraform configuration, which uses the data source for an AWS AMI.  
+What value should you enter for the `ami` argument in the AWS instance resource?**
+
+![alt text](31d56970-ef4c-4b9b-ace9-0b734289a343.png)
+
+- A. aws_ami.ubuntu  
+- B. data.aws_ami.ubuntu  
+- C. data.aws_ami.ubuntu.id
+- D. aws_ami.ubuntu.id  
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. data.aws_ami.ubuntu.id**
+
+---
+
+### 📘 Explanation:
+
+- In Terraform, a **data source** is referenced using the format:  
+  `data.<PROVIDER>_<DATA_SOURCE_TYPE>.<NAME>.<ATTRIBUTE>`.
+- Since we need the AMI ID from the `aws_ami` data source named `ubuntu`, the correct attribute is:  
+  `data.aws_ami.ubuntu.id`
+- Option **A** and **D** are incorrect because they omit the `data.` prefix.  
+- Option **B** references the data source but does not specify the required `id` attribute.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Data Sources](https://developer.hashicorp.com/terraform/language/data-sources)
+- [Terraform AWS Provider Docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76717-exam-terraform-associate-topic-1-question-46-discussion/)
+
+</details>
