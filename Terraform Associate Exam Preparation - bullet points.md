@@ -347,3 +347,131 @@ Common meta-arguments:
   `source = "git::https://github.com/example.git?ref=branch-name"`
 
 ---
+
+
+## 15. Terraform Splat Expressions ([*])
+Shorter syntax for accessing attributes in a list:
+
+```
+aws_instance.example[*].id
+```
+
+Incorrect syntax (legacy):
+
+```
+aws_instance.example.*.id
+```
+
+Wrong usage with dot (.) causes errors.
+
+---
+
+## 16. Fetching Values from Lists & Maps
+
+**Fetching list values:**
+
+```
+var.size[1]  # Retrieves the second item (index starts at 0)
+```
+
+**Fetching map values:**
+
+```
+var.type["ap-south-1"]
+```
+
+---
+
+## 17. Handling Large Infrastructures
+Cloud providers enforce API rate limits → split configurations.
+
+Use:
+
+```
+terraform apply -refresh=false -target=resource_name
+```
+
+---
+
+## 18. Terraform Backends
+
+**Default:** Local backend (stores state on disk).
+
+**Remote backends include:**
+
+- S3
+- Azure Storage
+- Terraform Cloud
+
+> Migrating state to a new backend triggers automatic migration.
+
+---
+
+## 19. Terraform Enterprise Air Gap Installation
+
+- Used for environments without internet access.
+- Supports offline provider/plugin installation.
+
+---
+
+## 20. Publishing Modules to Terraform Registry
+
+**Requirements:**
+
+- Must be hosted on GitHub.
+- Naming convention: `terraform-<PROVIDER>-<NAME>`.
+- Follow standard module structure.
+- Use version tags (e.g., `1.0.0`).
+
+---
+
+## 21. Comments in Terraform
+
+- Single-line: `#` or `//`
+- Multi-line: `/* comment */`
+
+---
+
+## 22. Terraform Dynamic Blocks
+
+- Used for generating nested configurations dynamically.
+- ⚠️ Overuse can make code harder to read.
+
+---
+
+## 23. Miscellaneous Pointers
+
+- GitHub is **NOT** a supported Terraform backend.
+- Terraform providers can be installed offline.
+- Terraform does **NOT** require Go as a prerequisite.
+- Terraform and provider versions do not have to match.
+
+---
+
+## 24. Handling State Locking
+
+Terraform automatically locks state during modifications.
+
+State locking prevents simultaneous changes by:
+
+- `terraform apply`
+- `terraform refresh`
+- `terraform state rm/mv/push`
+
+To manually unlock state:
+
+```
+terraform force-unlock <LOCK_ID>
+```
+
+---
+
+## 25. State File Security
+
+- State file may contain sensitive data → store in remote backends.
+- Use `.gitignore` to exclude:
+
+```
+terraform.tfstate
+terraform.tfvars
+```
