@@ -1724,3 +1724,35 @@ What should you do to delete the newly-created VM with Terraform?**
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74438-exam-terraform-associate-topic-1-question-49-discussion/)
 
 </details>
+
+## Question #: 49  
+
+**Setting the TF_LOG environment variable to DEBUG causes debug messages to be logged into syslog.**
+
+- A. True  
+- B. False 
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. False**
+
+---
+
+### 📘 Explanation:
+
+- Setting the `TF_LOG` environment variable (e.g., `TF_LOG=DEBUG`) enables detailed logging in Terraform.  
+- However, the logs are **written to standard error (stderr)** by default, **not to syslog**.  
+- If you want the logs stored in a file, you must also set the `TF_LOG_PATH` environment variable.  
+- Syslog integration is **not automatic**.
+
+---
+
+### 🔗 References:
+- [Terraform Docs: Debugging](https://developer.hashicorp.com/terraform/cli/config/environment-variables#tf_log)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/74899-exam-terraform-associate-topic-1-question-50-discussion/)
+
+</details>
