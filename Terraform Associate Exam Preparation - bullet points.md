@@ -26,4 +26,3 @@
 ### 🔽 Example:
 ![alt text](attached-images/image.png)
 
-
