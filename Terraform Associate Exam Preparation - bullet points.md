@@ -24,5 +24,5 @@
 - **Aliases** let you use multiple configurations of the same provider (e.g., for multi-region setups).
 
 ### 🔽 Example:
-![alt text](attached-images/image.png)
+![alt text](attached-images/image5.png)
 
