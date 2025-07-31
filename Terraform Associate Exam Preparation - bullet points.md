@@ -115,7 +115,7 @@ Includes:
 
 - Supported types: `string`, `number`, `boolean`, `list`, `set`, `map`, `null`.
 - Terraform does **not** support arrays.
-
+![alt text](attached-images/image7.png)
 ---
 
 ## 5. Terraform State Management
