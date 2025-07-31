@@ -1780,7 +1780,7 @@ What should you do to delete the newly-created VM with Terraform?**
 - A backend is specified in the **`terraform` block** of your configuration.  
 - The `resource`, `provider`, and `datasource` blocks are **not used** for backend configuration.  
 
-![alt text](image-2.png)
+![alt text](image-3.png)
 
 ---
 
