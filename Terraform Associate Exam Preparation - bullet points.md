@@ -102,7 +102,7 @@ Includes:
 
 ## 3. Resource Block Structure
 
-![alt text](image6.png)
+![alt text](attached-images/image6.png)
 - **Resource Type:** e.g., `aws_instance`
 - **Local Name:** e.g., `web`
 - **Arguments:** e.g., `ami`, `instance_type`
