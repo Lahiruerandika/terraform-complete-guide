@@ -283,6 +283,67 @@ Common meta-arguments:
 
 ![alt text](attached-images/image8.png)
 
-**Explicit dependency**: Manually define order using depends_on.
+- **Explicit dependency**: Manually define order using depends_on.
 
 ![alt text](attached-images/image9.png)
+
+## 8. Terraform Data Sources
+
+- Fetch and use data from external resources (e.g., existing AWS VPCs).
+
+---
+
+## 9. Terraform Enterprise & HCP Terraform
+
+- Provide:
+  - Single sign-on (SSO)
+  - Audit logging
+  - Team management & governance
+  - Private Module Registry
+  - Remote state storage with encryption
+- Terraform Cloud (HCP) automatically runs plans when code is pushed to VCS.
+
+---
+
+## 10. Protecting Secrets in HCP Terraform
+
+- Mark Terraform or environment variables as **Sensitive** to prevent visibility.
+- Sensitive values cannot be viewed even by admins.
+
+---
+
+## 11. Recreating Resources in Terraform
+
+- Force resource replacement using:  
+  `terraform apply -replace="aws_instance.example"`
+- `terraform taint` is deprecated; use `-replace` instead.
+
+---
+
+## 12. Infrastructure as Code (IaC) Benefits
+
+- **Automation**
+- **Versioning**
+- **Reusability**
+
+### Common IaC tools:
+- Terraform (multi-cloud)
+- AWS CloudFormation
+- Azure Resource Manager
+- Google Cloud Deployment Manager
+
+---
+
+## 13. Terraform Output Command (`terraform output`)
+
+- Extracts values from output variables stored in the state file.
+
+---
+
+## 14. Terraform & Git
+
+- By default, Terraform pulls from the default branch in Git.
+- To specify a branch or commit:  
+  `source = "git::https://github.com/example.git?ref=branch-name"`
+
+---
