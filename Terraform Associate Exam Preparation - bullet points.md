@@ -280,3 +280,9 @@ Common meta-arguments:
   resource "aws_eip" "example" {
     instance = aws_instance.myec2.id  # Implicit dependency
   }
+
+![alt text](attached-images/image8.png)
+
+**Explicit dependency**: Manually define order using depends_on.
+
+![alt text](attached-images/image9.png)
