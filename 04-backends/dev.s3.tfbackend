@@ -1,0 +1,5 @@
+
+      bucket = "your_manually_created_bucket_url_for_dev_env"
+      key = "04-backend/terraform.tfstate"
+      region = "us-east-1"
+    
