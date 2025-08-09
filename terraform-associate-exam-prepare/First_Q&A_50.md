@@ -1757,35 +1757,3 @@ What should you do to delete the newly-created VM with Terraform?**
 
 ## Question #: 50 
 
-**Where in your Terraform configuration do you specify a state backend?**
-
-- A. The terraform block 
-- B. The resource block  
-- C. The provider block  
-- D. The datasource block  
-
-<details>
-<summary><strong>✅ Check Answer</strong></summary>
-
----
-
-### ✅ Correct Answer:  
-**A. The terraform block**
-
----
-
-### 📘 Explanation:
-
-- Terraform **backends** determine where the state is stored and how operations like `apply` and `plan` are executed.  
-- A backend is specified in the **`terraform` block** of your configuration.  
-- The `resource`, `provider`, and `datasource` blocks are **not used** for backend configuration.  
-
-![alt text](attached-images/image-4.png)
-
----
-
-### 🔗 References:
-- [Terraform Docs: Backends](https://developer.hashicorp.com/terraform/language/settings/backends/configuration)
-- [ExamTopics Discussion](https://www.examtopics.com/discussions/hashicorp/view/76913-exam-terraform-associate-topic-1-question-51-discussion/)
-
-</details>
